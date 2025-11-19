@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RoofTrace — 24-hour Roof Takeoffs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RoofTrace delivers 24-hour roof takeoff PDFs: usable area, pitch class (±1), obstructions, and a quick BOM. Rush 8h +$30.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%232256dd' d='M10 60 50 25 90 60 82 60 50 32 18 60z'/></svg>">
+  <meta property="og:title" content="RoofTrace — 24-hour Roof Takeoffs">
+  <meta property="og:description" content="Clean 2-page PDFs for contractors: area, pitch class (±1), obstructions, BOM.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/rooftrace-site/">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/rooftrace-site/og.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn{ @apply inline-flex items-center justify-center px-5 py-3 rounded-xl text-white bg-blue-600 hover:bg-blue-700 transition; }
+    .btn-outline{ @apply inline-flex items-center justify-center px-5 py-3 rounded-xl border border-blue-600 text-blue-700 hover:bg-blue-50 transition; }
+    .card{ @apply rounded-2xl shadow-sm border border-gray-200 bg-white; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"RoofTrace",
+    "url":"https://YOUR-USERNAME.github.io/rooftrace-site/",
+    "description":"24-hour roof takeoffs for roofing & solar contractors.",
+    "email":"{{SUPPORT_EMAIL}}",
+    "areaServed":"US",
+    "brand":{"@type":"Brand","name":"RoofTrace"}
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Nav -->
+  <header class="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="h-8 w-8 rounded-lg bg-blue-600"></div>
+      <span class="font-semibold text-lg">RoofTrace</span>
+    </div>
+    <nav class="hidden sm:flex gap-6 text-sm">
+      <a href="#how" class="hover:text-blue-700">How it works</a>
+      <a href="#pricing" class="hover:text-blue-700">Pricing</a>
+      <a href="#faq" class="hover:text-blue-700">FAQ</a>
+      <a href="{{INTAKE_URL}}" class="hover:text-blue-700">Submit address</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+        24-hour roof takeoffs<br><span class="text-blue-700">area, pitch class (±1), obstructions, BOM</span>
+      </h1>
+      <p class="mt-4 text-gray-700">
+        Clean 2-page PDFs your estimators can paste into quotes. Standard 24h SLA (Mon–Sat).
+        <span class="font-medium">Rush 8h +$30</span> when capacity allows.
+      </p>
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a class="btn" href="{{STRIPE_SINGLE}}">Buy Single — $99</a>
+        <a class="btn-outline" href="{{STRIPE_5PACK}}">Buy 5-Pack — $299</a>
+        <a class="btn-outline" href="{{STRIPE_12PACK}}">Buy 12-Pack — $599</a>
+        <a class="underline text-sm" href="{{INTAKE_URL}}">Submit address</a>
+      </div>
+      <p class="mt-3 text-sm text-gray-600">First job <b>$79</b> with code <b>FIRST79</b> at checkout (48h).</p>
+      <div class="mt-6">
+        <a class="text-blue-700 underline" href="{{LOOM_URL}}">60-second demo</a>
+        <span class="mx-2">·</span>
+        <a class="text-blue-700 underline" href="{{SAMPLE_PDF_URL}}">View sample PDF</a>
+      </div>
+    </div>
+    <div class="card p-4">
+      <img class="rounded-xl w-full" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=1400&auto=format&fit=crop" alt="Roof aerial example">
+      <p class="text-xs text-gray-500 mt-3">Example aerial (annotated in delivered reports).</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="bg-white border-y border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-semibold">How it works</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <h3 class="font-semibold">1) Submit an address</h3>
+          <p class="text-gray-700 mt-2">Use our intake form. Standard 24h; <b>Rush 8h +$30</b>.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">2) We measure & annotate</h3>
+          <p class="text-gray-700 mt-2">Usable roof area, <b>pitch class (±1)</b>, obstruction %, and a quick BOM.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">3) Get a clean 2-page PDF</h3>
+          <p class="text-gray-700 mt-2">Page 1: summary metrics & notes. Page 2: annotated aerial with legend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold">Simple pricing</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="card p-6 flex flex-col">
+        <h3 class="font-semibold text-lg">Single</h3>
+        <p class="text-3xl font-bold mt-2">$99</p>
+        <p class="text-sm text-gray-600 mt-1">First job $79 with <b>FIRST79</b></p>
+        <a class="btn mt-6" href="{{STRIPE_SINGLE}}">Buy single</a>
+      </div>
+      <div class="card p-6 flex flex-col">
+        <h3 class="font-semibold text-lg">5-Pack</h3>
+        <p class="text-3xl font-bold mt-2">$299</p>
+        <p class="text-sm text-gray-600 mt-1">No expiration</p>
+        <a class="btn-outline mt-6" href="{{STRIPE_5PACK}}">Buy 5-pack</a>
+      </div>
+      <div class="card p-6 flex flex-col">
+        <h3 class="font-semibold text-lg">12-Pack</h3>
+        <p class="text-3xl font-bold mt-2">$599</p>
+        <p class="text-sm text-gray-600 mt-1">Best value</p>
+        <a class="btn-outline mt-6" href="{{STRIPE_12PACK}}">Buy 12-pack</a>
+      </div>
+    </div>
+    <p class="text-sm text-gray-600 mt-4">Rush upgrade: +$30 per job (8-hour SLA when available).</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white border-y border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-semibold">FAQs</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card p-6">
+          <h3 class="font-semibold">How accurate is pitch?</h3>
+          <p class="text-gray-700 mt-2">Pitch is reported as a class (±1). Verify on site before install.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">What if trees cover the roof?</h3>
+          <p class="text-gray-700 mt-2">We grade imagery quality and add confidence notes. If unusable, we issue partial credit or request two phone photos.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">Turnaround time?</h3>
+          <p class="text-gray-700 mt-2">Standard 24 hours (Mon–Sat). Rush 8 hours when capacity allows.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold">Do credits expire?</h3>
+          <p class="text-gray-700 mt-2">No. 5-pack and 12-pack credits do not expire.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <p>© <span id="y"></span> RoofTrace · Estimating only; verify on site.</p>
+      <div class="flex items-center gap-4">
+        <a class="underline" href="terms.html">Terms</a>
+        <a class="underline" href="privacy.html">Privacy</a>
+        <a class="underline" href="{{INTAKE_URL}}">Submit address</a>
+        <a class="underline" href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
